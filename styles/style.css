@@ -136,6 +136,7 @@ button {
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
+  cursor: pointer;
 }
 .task__input {
   width: 226px;

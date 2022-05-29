@@ -23,10 +23,13 @@ var createNewTaskElement=function(taskString){
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
     checkBox.type="checkbox";
+    const id = `task-${Date.now()}`;
+    checkBox.id=id;
     checkBox.classList.add("task__checkbox");
     //label
     var label=document.createElement("label");//label
     label.innerText=taskString;
+    label.htmlFor=id;
     label.classList.add(...["text-block", "task__title"]);
     //input (text)
     var editInput=document.createElement("input");//text

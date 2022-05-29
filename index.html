@@ -3,6 +3,7 @@
 <head>
   <title>Todo App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="Plan your todos with Todo App" name="description">
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet'>
   <link rel="stylesheet" href="styles/style.css" media="screen" charset="utf-8">
   <script src="scripts/app.js" defer></script>
@@ -11,9 +12,9 @@
   <header aria-labelledby="page-title" class="page-header">
     <h1 id="page-title" class="visually-hidden">Simple Todo page</h1>
     <img alt="Eisenhower matrix" class="page-header__content" src="assets/img/eisenhower-matrix.jpg">
-    <a target="_blank" class='page-header__link' href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    <a rel="noreferrer" target="_blank" class='page-header__link' href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </header>
-  <main class="center-wrapper">
+  <main aria-label="Todo App" class="center-wrapper">
     <header aria-labelledby="content-title" id='topSectionForAddingElementToList'>
       <label class="new-task__title" for="new-task">
         <h2 id="content-title" class="title">Add Item</h2>
@@ -27,8 +28,8 @@
       <h2 id="todo-title" class="title">Todo</h3>
       <ul id='incompleteTasks'>
         <li class="task">
-          <input class="task__checkbox" type='checkbox'>
-          <label class="text-block task__title">Pay Bills</label>
+          <input id="task-1" class="task__checkbox" type='checkbox'>
+          <label for="task-1" class="text-block task__title">Pay Bills</label>
           <input class="text-input text-block task__input" type="text">
           <button class="btn task__btn--edit">Edit</button>
           <button class="btn task__btn--remove">
@@ -37,8 +38,8 @@
           </button>
         </li>
         <li class="task task--edit">
-          <input class="task__checkbox" type="checkbox">
-          <label class="text-block task__title">Go Shopping</label>
+          <input id="task-2" class="task__checkbox" type="checkbox">
+          <label for="task-2" class="text-block task__title">Go Shopping</label>
           <input class="text-input text-block task__input" type="text" value="Go Shopping">
           <button class='btn task__btn--edit'>Save</button>
           <button class="btn task__btn--remove">
@@ -52,8 +53,8 @@
       <h2 id="completed-title" class="title">Completed</h3>
       <ul class="task-list--completed" id="completed-tasks">
         <li class="task">
-          <input class="task__checkbox" type="checkbox" checked>
-          <label class="text-block task__title">See the Doctor</label>
+          <input id="task-3" class="task__checkbox" type="checkbox" checked>
+          <label  for="task-3" class="text-block task__title">See the Doctor</label>
           <input class="text-input text-block task__input" type="text">
           <button class="btn task__btn--edit">Edit</button>
           <button class="btn task__btn--remove">
