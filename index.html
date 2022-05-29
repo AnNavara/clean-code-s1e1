@@ -13,33 +13,33 @@
     <img alt="Eisenhower matrix" class="page-header__content" src="assets/img/eisenhower-matrix.jpg">
     <a target="_blank" class='page-header__link' href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </header>
-  <main class="centered-main-page-element">
+  <main class="center-wrapper">
     <header aria-labelledby="content-title" id='topSectionForAddingElementToList'>
       <label class="new-task__title" for="new-task">
         <h2 id="content-title" class="title">Add Item</h2>
       </label>
-      <div class="task-row-wrapper">
-        <input id='new-task' class="new-task__input task text-input" type="text">
+      <div class="flex-container">
+        <input id='new-task' class="new-task__input text-block text-input" type="text">
         <button class="btn">Add</button>
       </div>
     </header>
     <section aria-labelledby="todo-title">
       <h2 id="todo-title" class="title">Todo</h3>
       <ul id='incompleteTasks'>
-        <li class="task-list__item">
+        <li class="task">
           <input class="task__checkbox" type='checkbox'>
-          <label class="task task__title">Pay Bills</label>
-          <input class="text-input task task__input" type="text">
+          <label class="text-block task__title">Pay Bills</label>
+          <input class="text-input text-block task__input" type="text">
           <button class="btn task__btn--edit">Edit</button>
           <button class="btn task__btn--remove">
             <img alt="button icon" class="task__btn-graphic" src="assets/icons/remove.svg">
             <span class="visually-hidden">Remove</span>
           </button>
         </li>
-        <li class="task-list__item task--edit">
+        <li class="task task--edit">
           <input class="task__checkbox" type="checkbox">
-          <label class="task task__title">Go Shopping</label>
-          <input class="text-input task task__input" type="text" value="Go Shopping">
+          <label class="text-block task__title">Go Shopping</label>
+          <input class="text-input text-block task__input" type="text" value="Go Shopping">
           <button class='btn task__btn--edit'>Save</button>
           <button class="btn task__btn--remove">
             <img alt="button icon" class="task__btn-graphic" src="assets/icons/remove.svg">
@@ -51,10 +51,10 @@
     <section aria-labelledby="completed-title">
       <h2 id="completed-title" class="title">Completed</h3>
       <ul class="task-list--completed" id="completed-tasks">
-        <li class="task-list__item">
+        <li class="task">
           <input class="task__checkbox" type="checkbox" checked>
-          <label class="task task__title">See the Doctor</label>
-          <input class="text-input task task__input" type="text">
+          <label class="text-block task__title">See the Doctor</label>
+          <input class="text-input text-block task__input" type="text">
           <button class="btn task__btn--edit">Edit</button>
           <button class="btn task__btn--remove">
             <img alt="button icon" class="task__btn-graphic" src="assets/icons/remove.svg">
