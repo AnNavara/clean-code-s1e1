@@ -4,7 +4,7 @@
   <title>Todo App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta content="Plan your todos with Todo App" name="description">
-  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700 rel=stylesheet">
   <link rel="stylesheet" href="styles/style.css" media="screen" charset="utf-8">
   <script src="scripts/app.js" defer></script>
 </head>
@@ -12,23 +12,23 @@
   <header aria-labelledby="page-title" class="page-header">
     <h1 id="page-title" class="visually-hidden">Simple Todo page</h1>
     <img alt="Eisenhower matrix" class="page-header__content" src="assets/img/eisenhower-matrix.jpg">
-    <a rel="noreferrer" target="_blank" class='page-header__link' href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    <a rel="noreferrer" target="_blank" class="page-header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </header>
   <main aria-label="Todo App" class="center-wrapper">
-    <header aria-labelledby="content-title" id='topSectionForAddingElementToList'>
+    <header aria-labelledby="content-title" id="addTask">
       <label class="new-task__title" for="new-task">
         <h2 id="content-title" class="title">Add Item</h2>
       </label>
       <div class="flex-container">
-        <input id='new-task' class="new-task__input text-block text-input" type="text">
+        <input id="new-task" class="new-task__input text-block text-input" type="text">
         <button class="btn">Add</button>
       </div>
     </header>
     <section aria-labelledby="todo-title">
       <h2 id="todo-title" class="title">Todo</h3>
-      <ul id='incompleteTasks'>
+      <ul id="incompleteTasks">
         <li class="task">
-          <input id="task-1" class="task__checkbox" type='checkbox'>
+          <input id="task-1" class="task__checkbox" type="checkbox">
           <label for="task-1" class="text-block task__title">Pay Bills</label>
           <input class="text-input text-block task__input" type="text">
           <button class="btn task__btn--edit">Edit</button>
@@ -41,7 +41,7 @@
           <input id="task-2" class="task__checkbox" type="checkbox">
           <label for="task-2" class="text-block task__title">Go Shopping</label>
           <input class="text-input text-block task__input" type="text" value="Go Shopping">
-          <button class='btn task__btn--edit'>Save</button>
+          <button class="btn task__btn--edit">Save</button>
           <button class="btn task__btn--remove">
             <img alt="button icon" class="task__btn-graphic" src="assets/icons/remove.svg">
             <span class="visually-hidden">Remove</span>
