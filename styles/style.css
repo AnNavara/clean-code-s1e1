@@ -76,8 +76,10 @@ button {
   width: 60px;
   font-family: Lato, sans-serif;
   cursor: pointer;
+  align-self: stretch;
 }
-.btn:hover {
+.btn:hover,
+.btn:focus {
   color: #3a3A3a;
 }
 /* Heading */
@@ -124,12 +126,15 @@ button {
   justify-content: space-between;
   align-items: center;
 }
-.task > * {
-  vertical-align: middle;
-}
 
 .task__checkbox {
   margin: 0 10px;
+  cursor: pointer;
+  transition: box-shadow 0.1s ease-in-out;
+}
+.task__checkbox:hover,
+.task__checkbox:focus {
+  box-shadow: 2px 1px 5px rgba(51, 51, 51, 0.35);
 }
 .task__title {
   padding-left: 10px;
@@ -146,7 +151,8 @@ button {
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.task__btn--remove:hover .task__btn-graphic {
+.task__btn--remove:hover .task__btn-graphic,
+.task__btn--remove:focus .task__btn-graphic {
   transform: rotateZ(0);
 }
 
