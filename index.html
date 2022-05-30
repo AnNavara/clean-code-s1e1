@@ -24,28 +24,27 @@
     </a>
   </header>
   <main aria-label="Todo App" class="center-wrapper">
-    <header aria-labelledby="content-title" id="addTask">
+    <header class="new-task" aria-labelledby="content-title" id="add-task">
       <label class="new-task__title" for="new-task">
         <h2 id="content-title" class="title">Add Item</h2>
       </label>
       <div class="flex-container">
         <input 
           id="new-task" 
-          class="new-task__input 
-          text-block text-input" 
+          class="new-task__input text-block text-input"
           type="text">
         <button class="btn">Add</button>
       </div>
     </header>
     <section aria-labelledby="todo-title">
       <h2 id="todo-title" class="title">Todo</h3>
-      <ul id="incompleteTasks">
+      <ul class="incomplete-tasks" id="incomplete-tasks">
         <li class="task">
           <input id="task-1" class="task__checkbox" type="checkbox">
           <label for="task-1" class="text-block task__title">Pay Bills</label>
           <input class="text-input text-block task__input" type="text">
-          <button class="btn task__btn--edit">Edit</button>
-          <button class="btn task__btn--remove">
+          <button class="btn task__edit-btn">Edit</button>
+          <button class="btn task__remove-btn">
             <img alt="button icon" class="task__btn-graphic" src="assets/icons/remove.svg">
             <span class="visually-hidden">Remove</span>
           </button>
@@ -54,8 +53,8 @@
           <input id="task-2" class="task__checkbox" type="checkbox">
           <label for="task-2" class="text-block task__title">Go Shopping</label>
           <input class="text-input text-block task__input" type="text" value="Go Shopping">
-          <button class="btn task__btn--edit">Save</button>
-          <button class="btn task__btn--remove">
+          <button class="btn task__edit-btn">Save</button>
+          <button class="btn task__remove-btn ">
             <img alt="button icon" class="task__btn-graphic" src="assets/icons/remove.svg">
             <span class="visually-hidden">Remove</span>
           </button>
@@ -64,13 +63,13 @@
     </section>
     <section aria-labelledby="completed-title">
       <h2 id="completed-title" class="title">Completed</h3>
-      <ul class="task-list--completed" id="completed-tasks">
+      <ul class="completed-tasks" id="completed-tasks">
         <li class="task">
           <input id="task-3" class="task__checkbox" type="checkbox" checked>
           <label  for="task-3" class="text-block task__title">See the Doctor</label>
           <input class="text-input text-block task__input" type="text">
-          <button class="btn task__btn--edit">Edit</button>
-          <button class="btn task__btn--remove">
+          <button class="btn task__edit-btn">Edit</button>
+          <button class="btn task__remove-btn">
             <img alt="button icon" class="task__btn-graphic" src="assets/icons/remove.svg">
             <span class="visually-hidden">Remove</span>
           </button>

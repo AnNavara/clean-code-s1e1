@@ -168,19 +168,19 @@ button {
   width: 226px;
 }
 
-.task__btn--remove .task__btn-graphic {
+.task__remove-btn .task__btn-graphic {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.task__btn--remove:hover .task__btn-graphic,
-.task__btn--remove:focus .task__btn-graphic {
+.task__remove-btn:hover .task__btn-graphic,
+.task__remove-btn:focus .task__btn-graphic {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.task-list--completed .task__title {
+.completed-tasks .task__title {
   text-decoration: line-through;
   color: #888;
 }
